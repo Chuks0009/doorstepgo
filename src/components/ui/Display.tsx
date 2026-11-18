@@ -17,7 +17,7 @@ export function Icon({ name, className, ...rest }: { name: string; className?: s
 /* ---------- Logo ---------- */
 export function Logo({ variant = 'full', className, tone = 'dark' }: { variant?: 'full' | 'mark'; className?: string; tone?: 'dark' | 'light' }) {
   const src = variant === 'mark' ? site.logo.mark : tone === 'light' ? site.logo.light : site.logo.full;
-  return <img src={src} alt={site.logo.alt} className={cn('block h-auto select-none', className)} draggable={false} />;
+  return <img src={src} alt={site.logo.alt} className={cn('block max-w-full select-none', className)} draggable={false} />;
 }
 
 /* ---------- Badges ---------- */
@@ -236,12 +236,12 @@ export function EmptyState({ icon = 'Inbox', title, body, action }: { icon?: str
 export function ProgressSteps({ steps, current, onStepClick }: { steps: string[]; current: number; onStepClick?: (i: number) => void }) {
   return (
     <nav aria-label="Progress">
-      <ol className="flex items-center gap-2">
+      <ol className="flex items-center gap-1 sm:gap-2">
         {steps.map((s, i) => {
           const done = i < current;
           const active = i === current;
           return (
-            <li key={s} className="flex flex-1 items-center gap-2 last:flex-none">
+            <li key={s} className="flex min-w-0 flex-1 items-center gap-1 last:flex-none sm:gap-2">
               <button
                 type="button"
                 disabled={!done || !onStepClick}
@@ -249,7 +249,7 @@ export function ProgressSteps({ steps, current, onStepClick }: { steps: string[]
                 aria-current={active ? 'step' : undefined}
                 className="flex items-center gap-2.5 disabled:cursor-default"
               >
-                <span className={cn('relative grid size-9 shrink-0 place-items-center rounded-full text-sm font-bold transition-all duration-500', done && 'bg-ok text-white', active && 'bg-go-sheen text-white shadow-glow-go', !done && !active && 'bg-surface-2 text-muted ring-1 ring-line-strong')}>
+                <span className={cn('relative grid size-8 shrink-0 place-items-center rounded-full text-xs font-bold sm:size-9 sm:text-sm transition-all duration-500', done && 'bg-ok text-white', active && 'bg-go-sheen text-white shadow-glow-go', !done && !active && 'bg-surface-2 text-muted ring-1 ring-line-strong')}>
                   {done ? <Check className="size-4" strokeWidth={3} /> : i + 1}
                   {active && <span className="absolute inset-0 animate-pulse-ring rounded-full ring-2 ring-go-500" aria-hidden />}
                 </span>

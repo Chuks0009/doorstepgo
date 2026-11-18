@@ -110,6 +110,14 @@
 }
 
 @layer base {
+  /* Grid children may shrink below their content width (prevents mobile overflow). Utilities like min-w-* still win. */
+  .grid > *, .inline-grid > * {
+    min-width: 0;
+  }
+  /* Contain absolutely-positioned children (e.g. sr-only labels) inside scroll boxes so they cannot widen the page. */
+  .overflow-x-auto, .overflow-auto {
+    position: relative;
+  }
   html {
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;

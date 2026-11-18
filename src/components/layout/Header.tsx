@@ -72,8 +72,8 @@ export function Header() {
 
               <div className="flex items-center gap-2">
                 <AccountArea solid={solid} />
-                <ButtonLink to="/request-quote" variant={solid ? 'outline' : 'glass'} size="sm" className="hidden md:inline-flex">Request a Quote</ButtonLink>
-                <ButtonLink to="/booking" variant="go" size="sm" className="hidden sm:inline-flex" iconRight={<ArrowRight className="size-4" />}>Book a Ride</ButtonLink>
+                <ButtonLink to="/request-quote" variant={solid ? 'outline' : 'glass'} size="sm" className="max-md:hidden">Request a Quote</ButtonLink>
+                <ButtonLink to="/booking" variant="go" size="sm" className="max-sm:hidden" iconRight={<ArrowRight className="size-4" />}>Book a Ride</ButtonLink>
                 <button
                   onClick={() => setMobile(true)}
                   className={cn('grid size-11 place-items-center rounded-xl transition lg:hidden', solid ? 'text-ink-900 hover:bg-surface-2' : 'text-white hover:bg-white/10')}

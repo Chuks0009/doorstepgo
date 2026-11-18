@@ -300,7 +300,7 @@ export default function AboutPage() {
             <TiltCard max={5} className="rounded-[2rem]">
               <SmartImage src={img(images.people[2].src, 900)} alt={images.people[2].alt} className="aspect-[4/5] overflow-hidden rounded-[2rem] shadow-lift" />
             </TiltCard>
-            <div className="glass absolute -right-2 bottom-8 max-w-[240px] rounded-2xl p-4 shadow-lift sm:-right-8">
+            <div className="glass absolute -right-2 bottom-8 max-w-[240px] rounded-2xl p-4 shadow-lift lg:-right-8">
               <p className="flex items-center gap-2 text-sm font-bold text-ink-900"><Headset className="size-4 text-go-500" aria-hidden /> Support hours</p>
               <ul className="mt-2 space-y-1 text-xs text-text-2">
                 {site.hours.map((h) => <li key={h.days}><span className="font-semibold text-ink-800">{h.days}:</span> {h.time}</li>)}

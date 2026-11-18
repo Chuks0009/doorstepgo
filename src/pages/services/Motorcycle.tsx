@@ -80,7 +80,7 @@ export default function MotorcyclePage() {
       {/* Booking process */}
       <section className="noise relative isolate overflow-hidden bg-ink-950 py-20 text-white sm:py-28">
         <GlowOrbs />
-        <SpeedLines className="absolute top-24 right-0 hidden w-1/4 opacity-40 lg:flex" />
+        <SpeedLines className="absolute top-24 right-0 w-1/4 opacity-40 max-lg:hidden" />
         <div className="container-x">
           <SectionHeading dark eyebrow="How booking works" title="Nine simple steps, about two minutes." subtitle="Explore each step — this is exactly what you’ll see in the booking flow." />
           <div className="mt-12">

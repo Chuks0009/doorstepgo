@@ -144,7 +144,7 @@ export default function MerchantsPage() {
       {/* ------------------------------------------------ DASHBOARD PREVIEW */}
       <section id="console" className="noise relative isolate scroll-mt-20 overflow-hidden bg-ink-950 py-20 text-white lg:py-28">
         <Orbs />
-        <SpeedLines className="absolute top-24 right-0 hidden w-1/4 opacity-60 lg:flex" />
+        <SpeedLines className="absolute top-24 right-0 w-1/4 opacity-60 max-lg:hidden" />
         <div className="container-x">
           <SectionHeading
             dark

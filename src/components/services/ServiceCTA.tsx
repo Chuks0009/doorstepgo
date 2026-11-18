@@ -39,7 +39,7 @@ export function ServiceCTA({
                   Ask on WhatsApp
                 </ExternalButton>
               </div>
-              <SpeedLines className="absolute right-0 bottom-10 hidden w-1/3 opacity-50 lg:flex" />
+              <SpeedLines className="absolute right-0 bottom-10 w-1/3 opacity-50 max-lg:hidden" />
             </div>
             {image && (
               <div className="relative min-h-60 lg:min-h-full">

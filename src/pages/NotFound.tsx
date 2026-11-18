@@ -38,7 +38,7 @@ export default function NotFoundPage() {
   return (
     <section className="noise relative isolate overflow-hidden bg-ink-950 text-white">
       <Orbs />
-      <SpeedLines className="absolute top-1/3 right-0 hidden w-1/4 opacity-50 lg:flex" />
+      <SpeedLines className="absolute top-1/3 right-0 w-1/4 opacity-50 max-lg:hidden" />
       <div className="container-x grid min-h-[100dvh] items-center gap-10 pt-[calc(72px+3rem)] pb-20 lg:grid-cols-2 lg:pt-[calc(72px+2rem)]">
         <div className="order-2 lg:order-1">
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="eyebrow-dark">Error 404 · Route not found</motion.p>

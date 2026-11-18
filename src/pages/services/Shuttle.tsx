@@ -139,7 +139,7 @@ export default function ShuttlePage() {
       {/* Group-size planner */}
       <section id="planner" className="noise relative isolate scroll-mt-24 overflow-hidden bg-ink-950 py-20 text-white sm:py-28">
         <GlowOrbs />
-        <SpeedLines className="absolute top-20 right-0 hidden w-1/4 opacity-40 lg:flex" />
+        <SpeedLines className="absolute top-20 right-0 w-1/4 opacity-40 max-lg:hidden" />
         <div className="container-x">
           <SectionHeading dark eyebrow="Group-size planner" title="How many vehicles do you need?" subtitle="Slide to your passenger count and pick a purpose — we’ll suggest a shuttle type and vehicle mix." />
           <div className="mt-12 grid gap-6 lg:grid-cols-[1fr_1.2fr]">

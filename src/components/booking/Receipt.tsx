@@ -35,7 +35,7 @@ export function Receipt({ title = 'Booking receipt', bookingReference, payment, 
         <div className="relative flex flex-wrap items-start justify-between gap-4">
           <div>
             <Logo tone="light" className="w-36 print:hidden" />
-            <Logo className="hidden w-36 print:block" />
+            <Logo className="w-36 not-print:hidden" />
             <p className="mt-4 text-xs font-bold tracking-[0.16em] text-go-300 uppercase print:text-go-700">{title}</p>
             <p className="font-mono text-lg font-bold tracking-wide">{payment.reference}</p>
           </div>

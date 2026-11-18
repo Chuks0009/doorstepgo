@@ -196,7 +196,7 @@ function StudentsBlock() {
   ];
   return (
     <section aria-labelledby="students-title" className="relative overflow-hidden bg-white py-20 lg:py-24">
-      <SpeedLines className="absolute top-10 right-0 hidden w-72 opacity-60 lg:block" />
+      <SpeedLines className="absolute top-10 right-0 w-72 opacity-60 max-lg:hidden" />
       <div className="container-x grid gap-10 lg:grid-cols-[1fr_1.1fr] lg:items-center">
         <div>
           <SectionHeading
